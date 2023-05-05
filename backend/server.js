@@ -19,7 +19,9 @@ mongoose.connect(URL, {
 });
 
 const SouvenirRouter = require("./routes/souvenirRoute.js");
+const UserRouter = require("./routes/UserRoutes.js");
 app.use("/souvenir", SouvenirRouter);
+app.use("/users", UserRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on port number: ${PORT}`);
