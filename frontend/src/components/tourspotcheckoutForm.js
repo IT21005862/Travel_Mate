@@ -29,7 +29,7 @@ export default function AddressForm() {
 
     const fetchDetails = async () => {
         const res = await axios
-          .get(`http://localhost:8070/tourspot/getTourSpot/${id}`)
+          .get(`https://travel-mate.onrender.com/tourspot/getTourSpot/${id}`)
           .catch((err) => console.log(err));
         const data = await res.data;
         console.log("tour2",data);

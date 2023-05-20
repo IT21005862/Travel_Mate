@@ -42,7 +42,7 @@ const navigate = useNavigate();
 
 
 
-const tourspotsearch = tourspot.filter((tourspots) => tourspots.title.toLowerCase().includes(searchTerm.toLowerCase()));
+const tourspotsearch = tourspot.filter((tourspots) => tourspots.title.toLowerCase().includes(searchTerm.toLowerCase())||tourspots.Address.toLowerCase().includes(searchTerm.toLowerCase())||tourspots.Address1.toLowerCase().includes(searchTerm.toLowerCase()) );
   console.log("search",tourspotsearch)
   return (
     <div>
